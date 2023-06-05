@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <div th:replace="fragments/header :: header-css"/>
+    </head>
+    <body>
+        <div th:replace="fragments/header :: header"/>
+        <div class="container">
+            <div class="starter-template">
+                <h1>Securing Spring Boot Application Using Spring Security</h1>
+                <ol>
+                    <h2><li>Visit <a th:href="@{/about}">About Page</a></li></h2>
+                    <h2><li>Visit <a th:href="@{/user}">User Page</a></li></h2>
+                    <h2><li>Visit <a th:href="@{/admin}">Admin Page</a></li></h2>
+                    <h2><li>Visit <a th:href="@{/super_admin}">Super Admin Page</a></li></h2>
+                </ol>
+            </div>
+        </div>
+        <div th:replace="fragments/footer :: footer"/>
+    </body>
+</html>
